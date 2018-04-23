@@ -1,1 +1,1 @@
-node test.js
+node --experimental-modules ./test.mjs
