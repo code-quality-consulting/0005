@@ -3,5 +3,5 @@ import {makeGreeting} from "./index";
 
 assert.equal(makeGreeting(), "Hello world!");
 assert.equal(makeGreeting("Ben"), "Hello Ben!");
-assert.equal(makeGreeting(), "\u00a1Hola mundo!");
+assert.equal(makeGreeting("", "Spanish"), "\u00a1Hola mundo!");
 console.log("Success");
