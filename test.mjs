@@ -1,3 +1,6 @@
+/*jslint
+    es6, node
+*/
 import assert from "assert";
 import {makeGreeting} from "./index";
 
