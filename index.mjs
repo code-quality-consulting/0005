@@ -9,6 +9,9 @@ export function makeGreeting(name = "world", language = "English") {
     return "Hello " + name + "!";
 }
 
-export function makeGreeter() {
+export function makeGreeter(language = "Spanish") {
+    if (language === "Spanish") {
+        return (name = "mundo") => `¡Hola ${name}!`;
+    }
     return (name = "world") => `Hello ${name}!`;
 }
