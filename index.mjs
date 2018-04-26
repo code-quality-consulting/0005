@@ -10,5 +10,5 @@ export function makeGreeting(name = "world", language = "English") {
 }
 
 export function makeGreeter() {
-    return () => "Hello world!";
+    return (name = "world") => `Hello ${name}!`;
 }
