@@ -2,7 +2,6 @@
     es6, node
 */
 import assert from "assert";
-import {makeGreeting} from "./index";
 import {makeGreeter} from "./index";
 
 const makeEnglishGreeting = makeGreeter("English");
