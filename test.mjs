@@ -7,6 +7,6 @@ import {makeGreeter} from "./index";
 
 const makeEnglishGreeting = makeGreeter("English");
 assert.equal(makeEnglishGreeting(), "Hello world!");
-assert.equal(makeGreeting("Ben"), "Hello Ben!");
+assert.equal(makeEnglishGreeting("Ben"), "Hello Ben!");
 assert.equal(makeGreeting("", "Spanish"), "\u00a1Hola mundo!");
 console.log("Success");
