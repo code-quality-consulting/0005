@@ -1,10 +1,16 @@
 /*jslint
     es6
 */
+const worldInDifferentLanguages = {
+    "English": "world",
+    "Spanish": "mundo"
+};
+
+const helloInDifferentLanguages = {
+    "English": "Hello",
+    "Spanish": "¡Hola"
+};
 
 export function makeGreeter(language = "") {
-    if (language === "Spanish") {
-        return (name = "mundo") => `¡Hola ${name}!`;
-    }
-    return (name = "world") => `Hello ${name}!`;
+    return (name = worldInDifferentLanguages[language]) => `${helloInDifferentLanguages[language]} ${name}!`;
 }
